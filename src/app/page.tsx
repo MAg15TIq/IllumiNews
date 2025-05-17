@@ -5,6 +5,7 @@ import { FeaturedArticles } from "@/components/featured-articles";
 import { RecentArticles } from "@/components/recent-articles";
 import { CategoriesSection } from "@/components/categories-section";
 import { AdBanner } from "@/components/ad-banner";
+import { AdBannerContainer } from "@/components/ad-banner-container";
 
 export default function Home() {
   return (
@@ -14,8 +15,9 @@ export default function Home() {
         <HeroSection />
         <AdBanner />
         <FeaturedArticles />
-        <AdBanner />
+        <AdBannerContainer />
         <RecentArticles />
+        <AdBanner />
         <CategoriesSection />
       </main>
       <Footer />

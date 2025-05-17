@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ShareButtons } from "@/components/share-buttons";
 import { AdBanner } from "@/components/ad-banner";
+import { AdBannerContainer } from "@/components/ad-banner-container";
 
 interface TimelineItem {
   date: string;
@@ -258,6 +259,9 @@ export function ArticleTemplate({
             </ul>
           </aside>
         )}
+
+        {/* Ad Banner Container */}
+        <AdBannerContainer />
 
         {/* Timeline Section */}
         {timeline && (
