@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ShareButtons } from "@/components/share-buttons";
+import { AdBanner } from "@/components/ad-banner";
 
 interface TimelineItem {
   date: string;
@@ -176,6 +177,9 @@ export function ArticleTemplate({
         ))}
       </section>
 
+      {/* Ad Banner */}
+      <AdBanner />
+
       {/* Main Content Sections */}
       <section className="article-body prose prose-lg dark:prose-invert max-w-none mb-8">
         {sections.map((section, sectionIndex) => (
@@ -310,6 +314,9 @@ export function ArticleTemplate({
           </form>
         </section>
       )}
+
+      {/* Ad Banner */}
+      <AdBanner />
 
       {/* Conclusion */}
       {conclusion && conclusion.length > 0 && (
