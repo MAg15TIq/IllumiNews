@@ -7,6 +7,7 @@ import { Separator } from "@/components/ui/separator";
 import { ShareButtons } from "@/components/share-buttons";
 import { AdBanner } from "@/components/ad-banner";
 import { AdBannerContainer } from "@/components/ad-banner-container";
+import { AdBannerContainer2 } from "@/components/ad-banner-container2";
 
 interface TimelineItem {
   date: string;
@@ -398,6 +399,9 @@ export function ArticleTemplate({
           </ul>
         </section>
       )}
+
+      {/* Additional Ad Banner Container */}
+      <AdBannerContainer2 />
     </article>
   );
 }

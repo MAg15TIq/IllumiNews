@@ -6,6 +6,7 @@ import { RecentArticles } from "@/components/recent-articles";
 import { CategoriesSection } from "@/components/categories-section";
 import { AdBanner } from "@/components/ad-banner";
 import { AdBannerContainer } from "@/components/ad-banner-container";
+import { AdBannerContainer2 } from "@/components/ad-banner-container2";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <RecentArticles />
         <AdBanner />
         <CategoriesSection />
+        <AdBannerContainer2 />
       </main>
       <Footer />
     </>
