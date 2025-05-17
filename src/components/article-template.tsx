@@ -8,6 +8,7 @@ import { ShareButtons } from "@/components/share-buttons";
 import { AdBanner } from "@/components/ad-banner";
 import { AdBannerContainer } from "@/components/ad-banner-container";
 import { AdBannerContainer2 } from "@/components/ad-banner-container2";
+import { AdBannerContainer3 } from "@/components/ad-banner-container3";
 
 interface TimelineItem {
   date: string;
@@ -346,6 +347,9 @@ export function ArticleTemplate({
           </Link>
         </section>
       )}
+
+      {/* Additional Ad Banner Container */}
+      <AdBannerContainer3 />
 
       {/* Tags */}
       <div className="flex flex-wrap gap-2 mb-8">
