@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+
 import { Breadcrumbs } from "@/components/breadcrumbs";
 
 // Mock data - in a real app, this would come from a database or API
@@ -105,14 +105,14 @@ const categories = [
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const category = categories.find(cat => cat.slug === params.slug);
-  
+
   if (!category) {
     return {
       title: "Category Not Found - Illuminews",
       description: "The category you're looking for could not be found."
     };
   }
-  
+
   return {
     title: `${category.name} News & Articles - Illuminews`,
     description: category.description,
@@ -126,26 +126,26 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 export default function CategoryPage({ params }: { params: { slug: string } }) {
   const category = categories.find(cat => cat.slug === params.slug);
-  
+
   if (!category) {
     notFound();
   }
-  
+
   return (
     <>
       <Navbar />
       <main className="pt-4 pb-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumbs 
+          <Breadcrumbs
             items={[
               { label: "Home", href: "/" },
               { label: "Categories", href: "/categories" },
               { label: category.name, href: `/category/${category.slug}`, current: true }
-            ]} 
+            ]}
           />
-          
+
           <div className="relative rounded-lg overflow-hidden h-64 md:h-80 mt-6 mb-12">
-            <div 
+            <div
               className="absolute inset-0 w-full h-full bg-cover bg-center"
               style={{ backgroundImage: `url('${category.image}')` }}
             />
@@ -159,14 +159,14 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
               </p>
             </div>
           </div>
-          
+
           {/* Featured Article */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-foreground mb-6">Featured {category.name} Story</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="md:col-span-2">
                 <div className="relative rounded-lg overflow-hidden h-64 md:h-80">
-                  <div 
+                  <div
                     className="absolute inset-0 w-full h-full bg-cover bg-center"
                     style={{ backgroundImage: `url('${category.featuredArticle.image}')` }}
                   />
@@ -206,7 +206,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
               </div>
             </div>
           </div>
-          
+
           {/* Latest Articles */}
           <div>
             <h2 className="text-2xl font-bold text-foreground mb-6">Latest {category.name} Articles</h2>
@@ -215,7 +215,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                 <Link key={article.id} href={`/article/${article.slug}`}>
                   <Card className="h-full overflow-hidden transition-all duration-200 hover:shadow-md">
                     <div className="relative pb-[60%]">
-                      <div 
+                      <div
                         className="absolute inset-0 w-full h-full bg-cover bg-center"
                         style={{ backgroundImage: `url('${article.image}')` }}
                       />
@@ -233,7 +233,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                 </Link>
               ))}
             </div>
-            
+
             <div className="mt-10 text-center">
               <Button variant="outline" size="lg">
                 Load More Articles

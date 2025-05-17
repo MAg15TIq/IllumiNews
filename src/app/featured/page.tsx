@@ -125,7 +125,7 @@ export default function FeaturedPage() {
               <span className="absolute bottom-0 left-0 w-full h-1 bg-primary mt-2 transform scale-x-0 transition-transform duration-500 group-hover:scale-x-100"></span>
             </h1>
             <p className="text-muted-foreground md:text-lg mx-auto">
-              Our editors' selection of the most important and interesting stories. These featured articles represent the best of our journalism across all categories.
+              Our editors&apos; selection of the most important and interesting stories. These featured articles represent the best of our journalism across all categories.
             </p>
           </div>
 

@@ -17,31 +17,31 @@ export function NewsletterSignup() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false)
       setIsSubmitted(true)
       setEmail("")
-      
+
       // Reset success message after 5 seconds
       setTimeout(() => {
         setIsSubmitted(false)
       }, 5000)
     }, 1500)
   }
-  
+
   const handlePreferenceChange = (id: keyof typeof preferences) => {
     setPreferences(prev => ({
       ...prev,
       [id]: !prev[id]
     }))
   }
-  
+
   return (
     <Card className="border-none shadow-none bg-muted/40">
       <CardHeader className="text-center">
@@ -59,7 +59,7 @@ export function NewsletterSignup() {
               </svg>
               <p className="font-medium">Thank you for subscribing!</p>
             </div>
-            <p className="mt-2 text-sm">You've been added to our mailing list and will receive updates according to your preferences.</p>
+            <p className="mt-2 text-sm">You&apos;ve been added to our mailing list and will receive updates according to your preferences.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="max-w-md mx-auto">
@@ -91,13 +91,13 @@ export function NewsletterSignup() {
                   </Button>
                 </div>
               </div>
-              
+
               <div className="space-y-2">
                 <Label>Newsletter Preferences</Label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   <div className="flex items-center space-x-2">
-                    <Checkbox 
-                      id="dailyDigest" 
+                    <Checkbox
+                      id="dailyDigest"
                       checked={preferences.dailyDigest}
                       onCheckedChange={() => handlePreferenceChange("dailyDigest")}
                     />
@@ -109,8 +109,8 @@ export function NewsletterSignup() {
                     </label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Checkbox 
-                      id="breakingNews" 
+                    <Checkbox
+                      id="breakingNews"
                       checked={preferences.breakingNews}
                       onCheckedChange={() => handlePreferenceChange("breakingNews")}
                     />
@@ -122,8 +122,8 @@ export function NewsletterSignup() {
                     </label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Checkbox 
-                      id="weeklyRoundup" 
+                    <Checkbox
+                      id="weeklyRoundup"
                       checked={preferences.weeklyRoundup}
                       onCheckedChange={() => handlePreferenceChange("weeklyRoundup")}
                     />
@@ -135,8 +135,8 @@ export function NewsletterSignup() {
                     </label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Checkbox 
-                      id="specialOffers" 
+                    <Checkbox
+                      id="specialOffers"
                       checked={preferences.specialOffers}
                       onCheckedChange={() => handlePreferenceChange("specialOffers")}
                     />
@@ -149,7 +149,7 @@ export function NewsletterSignup() {
                   </div>
                 </div>
               </div>
-              
+
               <p className="text-xs text-muted-foreground mt-4">
                 By subscribing, you agree to our <a href="/privacy-policy" className="underline hover:text-foreground">Privacy Policy</a> and consent to receive news and updates from Illuminews. You can unsubscribe at any time.
               </p>

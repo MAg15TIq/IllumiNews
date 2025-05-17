@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+
 
 export const metadata: Metadata = {
   title: "About Us - Illuminews",
@@ -132,7 +132,7 @@ export default function AboutPage() {
                   Our team of experienced journalists and subject matter experts work tirelessly to bring you stories that matter, explained with depth and context. We believe that well-informed citizens are essential to a functioning democracy and a better world.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  As an independent news organization, we're committed to maintaining the highest standards of journalistic integrity while embracing innovative approaches to storytelling and audience engagement.
+                  As an independent news organization, we&apos;re committed to maintaining the highest standards of journalistic integrity while embracing innovative approaches to storytelling and audience engagement.
                 </p>
               </div>
               <div className="relative h-[300px] rounded-lg overflow-hidden">
@@ -211,7 +211,7 @@ export default function AboutPage() {
           <section className="bg-muted/40 rounded-lg p-8 text-center">
             <h2 className="text-2xl font-bold mb-4">Join Our Team</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-              We're always looking for talented journalists, editors, and media professionals to join our team. If you're passionate about quality journalism and want to make a difference, we'd love to hear from you.
+              We&apos;re always looking for talented journalists, editors, and media professionals to join our team. If you&apos;re passionate about quality journalism and want to make a difference, we&apos;d love to hear from you.
             </p>
             <Button asChild>
               <Link href="/careers">View Open Positions</Link>

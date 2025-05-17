@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
+
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -151,11 +151,12 @@ function CommentItem({ comment, isReply = false }: CommentProps) {
   )
 }
 
-interface ArticleCommentsProps {
-  articleId: number
-}
+// Interface commented out as it's not currently used
+// interface ArticleCommentsProps {
+//   articleId: number
+// }
 
-export function ArticleComments({ articleId }: ArticleCommentsProps) {
+export function ArticleComments() {
   // In a real app, you would fetch comments based on the articleId
   const comments = mockComments
 

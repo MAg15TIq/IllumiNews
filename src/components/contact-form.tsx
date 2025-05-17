@@ -21,23 +21,23 @@ export function ContactForm() {
     message: "",
     inquiryType: ""
   })
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-  
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormState(prev => ({ ...prev, [name]: value }))
   }
-  
+
   const handleSelectChange = (value: string) => {
     setFormState(prev => ({ ...prev, inquiryType: value }))
   }
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false)
@@ -49,14 +49,14 @@ export function ContactForm() {
         message: "",
         inquiryType: ""
       })
-      
+
       // Reset success message after 5 seconds
       setTimeout(() => {
         setIsSubmitted(false)
       }, 5000)
     }, 1500)
   }
-  
+
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       {isSubmitted ? (
@@ -67,7 +67,7 @@ export function ContactForm() {
             </svg>
             <p className="font-medium">Thank you for your message!</p>
           </div>
-          <p className="mt-2 text-sm">We've received your inquiry and will get back to you as soon as possible.</p>
+          <p className="mt-2 text-sm">We&apos;ve received your inquiry and will get back to you as soon as possible.</p>
         </div>
       ) : (
         <>
@@ -83,7 +83,7 @@ export function ContactForm() {
                 required
               />
             </div>
-            
+
             <div className="space-y-2">
               <Label htmlFor="email">Email Address</Label>
               <Input
@@ -97,7 +97,7 @@ export function ContactForm() {
               />
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <Label htmlFor="inquiryType">Inquiry Type</Label>
@@ -118,7 +118,7 @@ export function ContactForm() {
                 </SelectContent>
               </Select>
             </div>
-            
+
             <div className="space-y-2">
               <Label htmlFor="subject">Subject</Label>
               <Input
@@ -131,7 +131,7 @@ export function ContactForm() {
               />
             </div>
           </div>
-          
+
           <div className="space-y-2">
             <Label htmlFor="message">Message</Label>
             <Textarea
@@ -144,7 +144,7 @@ export function ContactForm() {
               required
             />
           </div>
-          
+
           <div className="flex justify-end">
             <Button type="submit" disabled={isSubmitting}>
               {isSubmitting ? (

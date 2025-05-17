@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Card, CardContent } from "@/components/ui/card";
+
 
 export const metadata: Metadata = {
   title: "Mohsin Saleem Khan - Illuminews",
@@ -61,7 +61,7 @@ export default function AuthorPage() {
             <section className="prose prose-lg dark:prose-invert max-w-none animate-in fade-in duration-1000">
               <h2 className="text-2xl font-bold mb-4">The Vision Behind the Clarity</h2>
               <p>
-                Welcome to Illuminews, a platform dedicated to shedding light on complex topics and providing clear, insightful perspectives. At the very core of this mission is Mohsin Saleem Khan. As the Founder and Owner, Mohsin is the singular driving force behind Illuminews, responsible not only for its strategic direction but also for every word published, the platform's design, and its underlying technical infrastructure. His unique blend of editorial acumen and technological expertise shapes the Illuminews experience.
+                Welcome to Illuminews, a platform dedicated to shedding light on complex topics and providing clear, insightful perspectives. At the very core of this mission is Mohsin Saleem Khan. As the Founder and Owner, Mohsin is the singular driving force behind Illuminews, responsible not only for its strategic direction but also for every word published, the platform&apos;s design, and its underlying technical infrastructure. His unique blend of editorial acumen and technological expertise shapes the Illuminews experience.
               </p>
 
               <h2 className="text-2xl font-bold mt-8 mb-4">The Voice of Insight: Sole Author & Editor-in-Chief</h2>
@@ -73,7 +73,7 @@ export default function AuthorPage() {
                   <strong>Consistent Quality & Depth:</strong> Readers benefit from a unified analytical voice and a consistently high standard of research and clarity across all topics.
                 </li>
                 <li>
-                  <strong>Authentic Perspective:</strong> The insights and analyses presented are genuine, reflecting Mohsin's dedicated investigation and understanding of the subjects.
+                  <strong>Authentic Perspective:</strong> The insights and analyses presented are genuine, reflecting Mohsin&apos;s dedicated investigation and understanding of the subjects.
                 </li>
                 <li>
                   <strong>Intellectual Cohesion:</strong> As the single source of all content, Mohsin ensures a coherent narrative and interconnected understanding across different pieces, fostering deeper comprehension for the reader.
@@ -83,7 +83,7 @@ export default function AuthorPage() {
                 </li>
               </ul>
               <p>
-                Mohsin's role is to dissect complexity and illuminate understanding, making Illuminews a trusted source for clear and thoughtful information.
+                Mohsin&apos;s role is to dissect complexity and illuminate understanding, making Illuminews a trusted source for clear and thoughtful information.
               </p>
 
               <h2 className="text-2xl font-bold mt-8 mb-4">The Digital Foundation: Experienced Full-Stack Developer & Platform Designer</h2>
@@ -102,7 +102,7 @@ export default function AuthorPage() {
                 </li>
               </ul>
               <p>
-                Crucially, Mohsin personally designed the entire Illuminews website. He crafted the user interface (UI) and user experience (UX) with the specific goal of presenting information clearly, facilitating easy navigation through complex topics, and ensuring a seamless, trustworthy experience for visitors seeking knowledge. The platform's design and functionality are built to serve the content.
+                Crucially, Mohsin personally designed the entire Illuminews website. He crafted the user interface (UI) and user experience (UX) with the specific goal of presenting information clearly, facilitating easy navigation through complex topics, and ensuring a seamless, trustworthy experience for visitors seeking knowledge. The platform&apos;s design and functionality are built to serve the content.
               </p>
 
               <h2 className="text-2xl font-bold mt-8 mb-4">Integrated Expertise: Powering Insightful Delivery</h2>
@@ -111,7 +111,7 @@ export default function AuthorPage() {
               </p>
               <ul>
                 <li>
-                  <strong>Seamless Alignment:</strong> The way information is presented (design) and delivered (technology) is perfectly synchronized with the content's message and goals (journalistic insight).
+                  <strong>Seamless Alignment:</strong> The way information is presented (design) and delivered (technology) is perfectly synchronized with the content&apos;s message and goals (journalistic insight).
                 </li>
                 <li>
                   <strong>Rapid Innovation:</strong> Malik can swiftly implement new features, data visualizations, or presentation formats that enhance understanding, bridging the gap between editorial needs and technical execution.
@@ -120,13 +120,13 @@ export default function AuthorPage() {
                   <strong>Optimized User Experience:</strong> The platform is fine-tuned for readability, accessibility, and performance, directly supporting the mission of delivering clear, insightful news and analysis.
                 </li>
                 <li>
-                  <strong>Unified Vision:</strong> Every aspect of Illuminews reflects Mohsin's singular commitment to quality, clarity, and technical excellence.
+                  <strong>Unified Vision:</strong> Every aspect of Illuminews reflects Mohsin&apos;s singular commitment to quality, clarity, and technical excellence.
                 </li>
               </ul>
 
               <h2 className="text-2xl font-bold mt-8 mb-4">The Architect of Understanding at Illuminews</h2>
               <p>
-                Mohsin Saleem Khan's comprehensive expertise and unwavering dedication are the cornerstones of Illuminews. As the sole author, editor, designer, and developer, he ensures that the platform is not just a source of information, but a thoughtfully constructed environment for gaining understanding and clarity. His multifaceted role guarantees a cohesive, high-quality, and insightful experience for every reader seeking to be illuminated.
+                Mohsin Saleem Khan&apos;s comprehensive expertise and unwavering dedication are the cornerstones of Illuminews. As the sole author, editor, designer, and developer, he ensures that the platform is not just a source of information, but a thoughtfully constructed environment for gaining understanding and clarity. His multifaceted role guarantees a cohesive, high-quality, and insightful experience for every reader seeking to be illuminated.
               </p>
             </section>
 

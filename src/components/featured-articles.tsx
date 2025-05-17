@@ -57,7 +57,7 @@ export function FeaturedArticles() {
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-primary mt-2"></span>
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto mb-4">
-          Our editors' selection of the most important and interesting stories from around the world.
+          Our editors&apos; selection of the most important and interesting stories from around the world.
         </p>
         <Link
           href="/featured"

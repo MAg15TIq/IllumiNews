@@ -14,7 +14,7 @@ export default function ArticleNotFound() {
               Article Not Found
             </h1>
             <p className="text-muted-foreground mb-8">
-              We couldn't find the article you're looking for. It may have been removed, renamed, or is temporarily unavailable.
+              We couldn&apos;t find the article you&apos;re looking for. It may have been removed, renamed, or is temporarily unavailable.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild>
