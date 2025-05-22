@@ -5,10 +5,6 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ShareButtons } from "@/components/share-buttons";
-import { AdBanner } from "@/components/ad-banner";
-import { AdBannerContainer } from "@/components/ad-banner-container";
-import { AdBannerContainer2 } from "@/components/ad-banner-container2";
-import { AdBannerContainer3 } from "@/components/ad-banner-container3";
 
 interface TimelineItem {
   date: string;
@@ -180,9 +176,6 @@ export function ArticleTemplate({
         ))}
       </section>
 
-      {/* Ad Banner */}
-      <AdBanner />
-
       {/* Main Content Sections */}
       <section className="article-body prose prose-lg dark:prose-invert max-w-none mb-8">
         {sections.map((section, sectionIndex) => (
@@ -262,9 +255,6 @@ export function ArticleTemplate({
           </aside>
         )}
 
-        {/* Ad Banner Container */}
-        <AdBannerContainer />
-
         {/* Timeline Section */}
         {timeline && (
           <section className="my-8">
@@ -321,9 +311,6 @@ export function ArticleTemplate({
         </section>
       )}
 
-      {/* Ad Banner */}
-      <AdBanner />
-
       {/* Conclusion */}
       {conclusion && conclusion.length > 0 && (
         <section className="prose prose-lg dark:prose-invert max-w-none mb-8">
@@ -347,9 +334,6 @@ export function ArticleTemplate({
           </Link>
         </section>
       )}
-
-      {/* Additional Ad Banner Container */}
-      <AdBannerContainer3 />
 
       {/* Tags */}
       <div className="flex flex-wrap gap-2 mb-8">
@@ -404,8 +388,6 @@ export function ArticleTemplate({
         </section>
       )}
 
-      {/* Additional Ad Banner Container */}
-      <AdBannerContainer2 />
     </article>
   );
 }

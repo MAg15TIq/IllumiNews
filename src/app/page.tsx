@@ -4,10 +4,6 @@ import { HeroSection } from "@/components/hero-section";
 import { FeaturedArticles } from "@/components/featured-articles";
 import { RecentArticles } from "@/components/recent-articles";
 import { CategoriesSection } from "@/components/categories-section";
-import { AdBanner } from "@/components/ad-banner";
-import { AdBannerContainer } from "@/components/ad-banner-container";
-import { AdBannerContainer2 } from "@/components/ad-banner-container2";
-import { AdBannerContainer3 } from "@/components/ad-banner-container3";
 
 export default function Home() {
   return (
@@ -15,14 +11,9 @@ export default function Home() {
       <Navbar />
       <main className="pt-4 pb-12">
         <HeroSection />
-        <AdBanner />
         <FeaturedArticles />
-        <AdBannerContainer />
         <RecentArticles />
-        <AdBannerContainer3 />
-        <AdBanner />
         <CategoriesSection />
-        <AdBannerContainer2 />
       </main>
       <Footer />
     </>

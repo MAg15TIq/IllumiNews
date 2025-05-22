@@ -151,12 +151,11 @@ function CommentItem({ comment, isReply = false }: CommentProps) {
   )
 }
 
-// Interface commented out as it's not currently used
-// interface ArticleCommentsProps {
-//   articleId: number
-// }
+interface ArticleCommentsProps {
+  articleId: number
+}
 
-export function ArticleComments() {
+export function ArticleComments({ articleId }: ArticleCommentsProps) {
   // In a real app, you would fetch comments based on the articleId
   const comments = mockComments
 
