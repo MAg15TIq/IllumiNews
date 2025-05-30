@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ShareButtons } from "@/components/share-buttons";
+import { AdSenseBanner, AdSenseInArticle } from "@/components/ads";
 
 interface TimelineItem {
   date: string;
@@ -176,6 +177,13 @@ export function ArticleTemplate({
         ))}
       </section>
 
+      {/* Top Banner Ad */}
+      <AdSenseBanner
+        adSlot="1234567890"
+        className="mb-8"
+        adFormat="horizontal"
+      />
+
       {/* Main Content Sections */}
       <section className="article-body prose prose-lg dark:prose-invert max-w-none mb-8">
         {sections.map((section, sectionIndex) => (
@@ -237,6 +245,14 @@ export function ArticleTemplate({
                 )}
               </div>
             ))}
+
+            {/* Add in-article ad after every 2nd section */}
+            {(sectionIndex + 1) % 2 === 0 && sectionIndex < sections.length - 1 && (
+              <AdSenseInArticle
+                adSlot="0987654321"
+                className="my-8"
+              />
+            )}
           </div>
         ))}
 
@@ -350,6 +366,13 @@ export function ArticleTemplate({
       <ShareButtons title={title} url={`/article/${title.toLowerCase().replace(/\s+/g, '-')}`} />
 
       <Separator className="my-12" />
+
+      {/* Bottom Banner Ad */}
+      <AdSenseBanner
+        adSlot="2468135790"
+        className="mb-8"
+        adFormat="rectangle"
+      />
 
       {/* Author Bio */}
       <section className="flex items-start space-x-4 mb-8 p-6 bg-muted rounded-lg">

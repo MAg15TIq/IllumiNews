@@ -21,14 +21,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
+      <head />
+      <body className={`${inter.variable} font-sans antialiased`}>
+        {/*
+          Google AdSense Integration
+          - Auto ads enabled globally across all pages
+          - Client ID: ca-pub-5754219619080083
+          - Loading strategy: afterInteractive (non-blocking)
+          - Error handling and success logging included
+          - See docs/ADSENSE_INTEGRATION.md for full documentation
+        */}
         <Script
+          id="google-adsense"
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5754219619080083"
           crossOrigin="anonymous"
+          strategy="afterInteractive"
         />
-      </head>
-      <body className={`${inter.variable} font-sans antialiased`}>
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
