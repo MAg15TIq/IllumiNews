@@ -2,6 +2,13 @@
 
 import { useEffect } from "react";
 
+// Extend Window interface to include adsbygoogle
+declare global {
+  interface Window {
+    adsbygoogle: unknown[];
+  }
+}
+
 interface AdSenseBannerProps {
   adSlot: string;
   adFormat?: "auto" | "rectangle" | "vertical" | "horizontal";
@@ -20,8 +27,8 @@ export function AdSenseBanner({
   useEffect(() => {
     try {
       // Check if adsbygoogle is available
-      if (typeof window !== "undefined" && (window as any).adsbygoogle) {
-        ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+      if (typeof window !== "undefined" && window.adsbygoogle) {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
       }
     } catch (error) {
       console.error("AdSense error:", error);

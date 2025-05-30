@@ -2,6 +2,13 @@
 
 import { useEffect } from "react";
 
+// Extend Window interface to include adsbygoogle
+declare global {
+  interface Window {
+    adsbygoogle: unknown[];
+  }
+}
+
 interface AdSenseSidebarProps {
   adSlot: string;
   className?: string;
@@ -13,8 +20,8 @@ export function AdSenseSidebar({
 }: AdSenseSidebarProps) {
   useEffect(() => {
     try {
-      if (typeof window !== "undefined" && (window as any).adsbygoogle) {
-        ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+      if (typeof window !== "undefined" && window.adsbygoogle) {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
       }
     } catch (error) {
       console.error("AdSense Sidebar error:", error);

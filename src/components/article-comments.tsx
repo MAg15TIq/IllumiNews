@@ -157,6 +157,8 @@ interface ArticleCommentsProps {
 
 export function ArticleComments({ articleId }: ArticleCommentsProps) {
   // In a real app, you would fetch comments based on the articleId
+  // For now, using mock data - articleId will be used for API calls
+  console.log('Article ID for comments:', articleId); // TODO: Remove when implementing real API
   const comments = mockComments
 
   return (
