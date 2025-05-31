@@ -209,8 +209,8 @@ export function Footer() {
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
             © {new Date().getFullYear()} Illuminews. All rights reserved.
           </p>
-          <div className="flex space-x-6">
-            <Link href="/privacy" className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200">
+          <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center md:justify-end">
+            <Link href="/privacy-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200">
               Privacy Policy
             </Link>
             <Link href="/terms" className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200">
@@ -218,6 +218,21 @@ export function Footer() {
             </Link>
             <Link href="/cookies" className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200">
               Cookie Policy
+            </Link>
+            <Link href="/disclaimer" className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200">
+              Disclaimer
+            </Link>
+            <Link href="/editorial-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200">
+              Editorial Policy
+            </Link>
+            <Link href="/advertising-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200">
+              Advertising Policy
+            </Link>
+            <Link href="/corrections" className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200">
+              Corrections
+            </Link>
+            <Link href="/content-guidelines" className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200">
+              Content Guidelines
             </Link>
           </div>
         </div>

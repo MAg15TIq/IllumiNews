@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ConsentBanner } from "@/components/consent-banner";
 import Script from "next/script";
 
 const inter = Inter({
@@ -46,6 +47,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <ConsentBanner />
         </ThemeProvider>
       </body>
     </html>

@@ -63,10 +63,14 @@ export default function PrivacyPolicyPage() {
               <li><a href="#disclosure-of-information" className="text-primary hover:underline">Disclosure of Your Information</a></li>
               <li><a href="#tracking-technologies" className="text-primary hover:underline">Tracking Technologies</a></li>
               <li><a href="#third-party-websites" className="text-primary hover:underline">Third-Party Websites</a></li>
+              <li><a href="#adsense-data" className="text-primary hover:underline">Google AdSense Data Collection</a></li>
               <li><a href="#data-security" className="text-primary hover:underline">Data Security</a></li>
               <li><a href="#data-retention" className="text-primary hover:underline">Data Retention</a></li>
-              <li><a href="#your-rights" className="text-primary hover:underline">Your Privacy Rights</a></li>
+              <li><a href="#consent-management" className="text-primary hover:underline">Consent Management</a></li>
+              <li><a href="#your-rights" className="text-primary hover:underline">Your Privacy Rights (GDPR/CCPA)</a></li>
               <li><a href="#children" className="text-primary hover:underline">Children&apos;s Privacy</a></li>
+              <li><a href="#international-transfers" className="text-primary hover:underline">International Data Transfers</a></li>
+              <li><a href="#data-protection-officer" className="text-primary hover:underline">Data Protection Officer</a></li>
               <li><a href="#contact-us" className="text-primary hover:underline">Contact Us</a></li>
             </ol>
           </section>
@@ -197,9 +201,235 @@ export default function PrivacyPolicyPage() {
 
           <Separator className="my-8" />
 
+          {/* Google AdSense Data Collection */}
+          <section id="adsense-data" className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">6. Google AdSense Data Collection</h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <p>
+                We use Google AdSense to display advertisements on our website. Google AdSense uses cookies and similar technologies to collect information about your visits to this and other websites in order to provide relevant advertisements.
+              </p>
+
+              <h3 className="text-xl font-semibold">Information Collected by Google AdSense</h3>
+              <ul>
+                <li>Your IP address and geographic location</li>
+                <li>Browser type and version</li>
+                <li>Pages visited on our website</li>
+                <li>Time spent on pages</li>
+                <li>Referring website information</li>
+                <li>Previous ad interactions</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold">How Google Uses This Information</h3>
+              <p>
+                Google uses this information to:
+              </p>
+              <ul>
+                <li>Serve personalized advertisements based on your interests</li>
+                <li>Measure ad performance and effectiveness</li>
+                <li>Prevent fraud and abuse</li>
+                <li>Improve their advertising services</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold">Your Choices</h3>
+              <p>
+                You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Google&apos;s Ads Settings</a>. You can also visit <a href="http://www.aboutads.info/choices/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">www.aboutads.info</a> to opt out of third-party vendor cookies for personalized advertising.
+              </p>
+            </div>
+          </section>
+
+          <Separator className="my-8" />
+
+          {/* Data Security */}
+          <section id="data-security" className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">7. Data Security</h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <p>
+                We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable.
+              </p>
+              <p>
+                We implement industry-standard security measures including:
+              </p>
+              <ul>
+                <li>SSL/TLS encryption for data transmission</li>
+                <li>Secure server infrastructure</li>
+                <li>Regular security audits and updates</li>
+                <li>Access controls and authentication</li>
+                <li>Data backup and recovery procedures</li>
+              </ul>
+            </div>
+          </section>
+
+          <Separator className="my-8" />
+
+          {/* Data Retention */}
+          <section id="data-retention" className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">8. Data Retention</h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <p>
+                We retain your personal information only for as long as necessary to fulfill the purposes for which it was collected, including:
+              </p>
+              <ul>
+                <li>Providing our services to you</li>
+                <li>Complying with legal obligations</li>
+                <li>Resolving disputes</li>
+                <li>Enforcing our agreements</li>
+              </ul>
+              <p>
+                When we no longer need your personal information, we will securely delete or anonymize it in accordance with our data retention policies and applicable laws.
+              </p>
+            </div>
+          </section>
+
+          <Separator className="my-8" />
+
+          {/* Consent Management */}
+          <section id="consent-management" className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">9. Consent Management</h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <p>
+                We use a Consent Management Platform (CMP) to ensure compliance with privacy regulations and respect your choices about data processing:
+              </p>
+
+              <h3 className="text-xl font-semibold">Cookie Consent</h3>
+              <ul>
+                <li>We obtain your consent before placing non-essential cookies</li>
+                <li>You can manage your cookie preferences at any time</li>
+                <li>Essential cookies for site functionality are always active</li>
+                <li>Analytics and advertising cookies require your consent</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold">Consent Management Features</h3>
+              <ul>
+                <li>Granular control over different types of data processing</li>
+                <li>Easy withdrawal of consent at any time</li>
+                <li>Clear information about what each consent covers</li>
+                <li>Consent history and audit trail maintenance</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold">Legal Basis for Processing</h3>
+              <p>
+                Under GDPR, we process your personal data based on the following legal grounds:
+              </p>
+              <ul>
+                <li><strong>Consent:</strong> For marketing communications and non-essential cookies</li>
+                <li><strong>Legitimate Interest:</strong> For analytics and website improvement</li>
+                <li><strong>Contract Performance:</strong> For account management and service delivery</li>
+                <li><strong>Legal Obligation:</strong> For compliance with applicable laws</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold">Managing Your Preferences</h3>
+              <p>
+                You can update your consent preferences through:
+              </p>
+              <ul>
+                <li>The cookie banner that appears on your first visit</li>
+                <li>The "Privacy Preferences" link in our footer</li>
+                <li>Your account settings (for registered users)</li>
+                <li>Contacting our privacy team directly</li>
+              </ul>
+            </div>
+          </section>
+
+          <Separator className="my-8" />
+
+          {/* Your Privacy Rights */}
+          <section id="your-rights" className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">10. Your Privacy Rights (GDPR/CCPA)</h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <p>
+                Depending on your location, you may have certain rights regarding your personal information under applicable privacy laws, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA).
+              </p>
+
+              <h3 className="text-xl font-semibold">Your Rights May Include:</h3>
+              <ul>
+                <li><strong>Right to Access:</strong> Request information about the personal data we hold about you</li>
+                <li><strong>Right to Rectification:</strong> Request correction of inaccurate personal data</li>
+                <li><strong>Right to Erasure:</strong> Request deletion of your personal data</li>
+                <li><strong>Right to Portability:</strong> Request a copy of your data in a structured format</li>
+                <li><strong>Right to Object:</strong> Object to processing of your personal data</li>
+                <li><strong>Right to Restrict Processing:</strong> Request limitation of processing</li>
+                <li><strong>Right to Withdraw Consent:</strong> Withdraw consent where processing is based on consent</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold">How to Exercise Your Rights</h3>
+              <p>
+                To exercise any of these rights, please contact us at privacy@illuminews.com. We will respond to your request within the timeframes required by applicable law.
+              </p>
+            </div>
+          </section>
+
+          <Separator className="my-8" />
+
+          {/* Children's Privacy */}
+          <section id="children" className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">11. Children&apos;s Privacy</h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <p>
+                Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us.
+              </p>
+              <p>
+                If we become aware that we have collected personal information from children under age 13 without verification of parental consent, we take steps to remove that information from our servers.
+              </p>
+            </div>
+          </section>
+
+          <Separator className="my-8" />
+
+          {/* International Data Transfers */}
+          <section id="international-transfers" className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">12. International Data Transfers</h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <p>
+                Your information, including personal data, may be transferred to and maintained on computers located outside of your state, province, country, or other governmental jurisdiction where the data protection laws may differ from those of your jurisdiction.
+              </p>
+              <p>
+                If you are located outside the United States and choose to provide information to us, please note that we transfer the data, including personal data, to the United States and process it there.
+              </p>
+              <p>
+                We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy.
+              </p>
+            </div>
+          </section>
+
+          <Separator className="my-8" />
+
+          {/* Data Protection Officer */}
+          <section id="data-protection-officer" className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">13. Data Protection Officer</h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              <p>
+                We have appointed a Data Protection Officer (DPO) to oversee our data protection practices and ensure compliance with privacy regulations:
+              </p>
+
+              <h3 className="text-xl font-semibold">DPO Responsibilities</h3>
+              <ul>
+                <li>Monitoring compliance with GDPR and other privacy laws</li>
+                <li>Conducting privacy impact assessments</li>
+                <li>Serving as point of contact for data protection authorities</li>
+                <li>Providing guidance on data protection matters</li>
+                <li>Handling data subject requests and complaints</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold">Contact Our DPO</h3>
+              <p>
+                You can contact our Data Protection Officer directly for privacy-related concerns:
+              </p>
+              <p>
+                <strong>Email:</strong> dpo@illuminews.com<br />
+                <strong>Address:</strong> Data Protection Officer<br />
+                Illuminews<br />
+                123 News Avenue<br />
+                New York, NY 10001<br />
+                United States
+              </p>
+            </div>
+          </section>
+
+          <Separator className="my-8" />
+
           {/* Contact Us */}
           <section id="contact-us" className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">10. Contact Us</h2>
+            <h2 className="text-2xl font-bold mb-4">14. Contact Us</h2>
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p>
                 If you have questions or comments about this Privacy Policy, please contact us at:
