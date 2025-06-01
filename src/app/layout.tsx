@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ConsentBanner } from "@/components/consent-banner";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
+import { AdSenseLogger } from "@/components/analytics/adsense-logger";
 import Script from "next/script";
 
 const inter = Inter({
@@ -105,12 +106,6 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5754219619080083"
           crossOrigin="anonymous"
           strategy="afterInteractive"
-          onLoad={() => {
-            console.log('Google AdSense script loaded successfully');
-          }}
-          onError={(e) => {
-            console.error('Failed to load Google AdSense script:', e);
-          }}
         />
 
         {/* Google AdSense Auto Ads Initialization */}
@@ -136,6 +131,7 @@ export default function RootLayout({
           <Suspense fallback={null}>
             <GoogleAnalytics />
           </Suspense>
+          <AdSenseLogger />
           {children}
           <ConsentBanner />
         </ThemeProvider>
