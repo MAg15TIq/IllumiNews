@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://illuminews.online/</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Category Pages -->
+  <url>
+    <loc>https://illuminews.online/category/technology</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://illuminews.online/category/environment</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://illuminews.online/category/politics</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://illuminews.online/category/business</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://illuminews.online/category/sports</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://illuminews.online/category/entertainment</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article Pages -->
+  <url>
+    <loc>https://illuminews.online/article/quantum-computing-breakthrough</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Illuminews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2024-01-06</news:publication_date>
+      <news:title>Quantum Computing Breakthrough: Scientists Achieve New Milestone</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://illuminews.online/article/climate-change-solutions</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Illuminews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2024-01-06</news:publication_date>
+      <news:title>Climate Change Solutions: Innovative Approaches to Environmental Challenges</news:title>
+    </news:news>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://illuminews.online/privacy-policy</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://illuminews.online/terms-of-service</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://illuminews.online/cookies</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://illuminews.online/about</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://illuminews.online/contact</loc>
+    <lastmod>2024-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

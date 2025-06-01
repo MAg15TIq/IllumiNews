@@ -1,0 +1,27 @@
+# Robots.txt for IllumiNews
+# Allow all web crawlers access to all content
+
+User-agent: *
+Allow: /
+
+# Allow Google AdSense crawlers
+User-agent: Mediapartners-Google
+Allow: /
+
+# Allow Google crawlers
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing crawlers
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://illuminews.online/sitemap.xml
+
+# Disallow access to admin areas (if any)
+# Disallow: /admin/
+# Disallow: /_next/static/
+
+# Allow access to ads.txt
+Allow: /ads.txt

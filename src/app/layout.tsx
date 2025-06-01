@@ -14,7 +14,38 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Illuminews - Stay Informed with the Latest News",
-  description: "Illuminews is your source for the latest news, articles, and insights from around the world.",
+  description: "Illuminews is your source for the latest news, articles, and insights from around the world. Get breaking news, technology updates, environmental stories, and more.",
+  keywords: "news, breaking news, technology, environment, politics, business, sports, entertainment, world news",
+  authors: [{ name: "Illuminews Editorial Team" }],
+  creator: "Illuminews",
+  publisher: "Illuminews",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://illuminews.online',
+    siteName: 'Illuminews',
+    title: 'Illuminews - Stay Informed with the Latest News',
+    description: 'Your source for the latest news, articles, and insights from around the world.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Illuminews - Stay Informed with the Latest News',
+    description: 'Your source for the latest news, articles, and insights from around the world.',
+  },
+  verification: {
+    google: 'google-site-verification-code-here', // Replace with actual verification code when available
+  },
 };
 
 export default function RootLayout({
@@ -74,6 +105,26 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5754219619080083"
           crossOrigin="anonymous"
           strategy="afterInteractive"
+          onLoad={() => {
+            console.log('Google AdSense script loaded successfully');
+          }}
+          onError={(e) => {
+            console.error('Failed to load Google AdSense script:', e);
+          }}
+        />
+
+        {/* Google AdSense Auto Ads Initialization */}
+        <Script
+          id="google-adsense-auto-ads"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-5754219619080083",
+                enable_page_level_ads: true
+              });
+            `,
+          }}
         />
 
         <ThemeProvider
